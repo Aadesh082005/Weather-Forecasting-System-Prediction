@@ -1,0 +1,110 @@
+```gitignore
+# ==========================================
+# Python cache files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Virtual environments
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Machine Learning trained models
+# Ignore large model files in any directory
+# ==========================================
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.pb
+*.safetensors
+*.model
+*.weights
+*.ckpt
+*.tflite
+*.gguf
+*.bin
+
+# Model directories
+models/
+saved_models/
+checkpoints/
+
+# ==========================================
+# Raw datasets
+# ==========================================
+dataset/raw/*
+!dataset/raw/.gitkeep
+
+# ==========================================
+# Processed datasets
+# ==========================================
+dataset/processed/*
+!dataset/processed/.gitkeep
+
+# Common large dataset files
+*.parquet
+*.feather
+
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# IDE and editor files
+# ==========================================
+.vscode/
+.idea/
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Logs and temporary files
+# ==========================================
+*.log
+*.tmp
+*.temp
+
+# ==========================================
+# Build and distribution files
+# ==========================================
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# Node.js (if used)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+```
