@@ -1,0 +1,34 @@
+{
+    "city": "Nagpur",
+    "country": "India",
+    "rows": 727,
+    "features": [
+        "temperature_lag1",
+        "temperature_lag2",
+        "temperature_lag3",
+        "humidity_lag1",
+        "rainfall_lag1",
+        "wind_lag1",
+        "month",
+        "day_of_year"
+    ],
+    "targets": [
+        "temperature",
+        "humidity",
+        "rainfall"
+    ],
+    "metrics": {
+        "temperature": {
+            "mae": 0.7706,
+            "rmse": 1.0394
+        },
+        "humidity": {
+            "mae": 4.7031,
+            "rmse": 6.3097
+        },
+        "rainfall": {
+            "mae": 4.9513,
+            "rmse": 7.5105
+        }
+    }
+}

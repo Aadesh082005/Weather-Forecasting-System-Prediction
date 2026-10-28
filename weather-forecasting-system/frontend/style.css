@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b1220;
+    color: #edf4ff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 32px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 5px 0 10px;
+}
+
+h2 {
+    margin-top: 8px;
+}
+
+.eyebrow {
+    color: #77b7ff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.description,
+.header p,
+.card p {
+    color: #aabbd2;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    width: 190px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #30435e;
+    background: #111e32;
+    color: white;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #78b7ff;
+    color: #081426;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a4d0ff;
+}
+
+#status {
+    color: #aabbd2;
+    min-height: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #19466f, #17253b);
+    border: 1px solid #2b4564;
+}
+
+.hero h2 {
+    font-size: 56px;
+    margin: 12px 0;
+}
+
+.weather-icon {
+    font-size: 70px;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 18px 0;
+}
+
+.card,
+.prediction {
+    padding: 22px;
+    border: 1px solid #283b55;
+    border-radius: 16px;
+    background: #121e30;
+}
+
+.card h2,
+.prediction h2 {
+    font-size: 25px;
+}
+
+.section {
+    margin-top: 22px;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.day {
+    text-align: center;
+    padding: 14px 6px;
+    border-radius: 12px;
+    background: #0b1728;
+    border: 1px solid #283b55;
+}
+
+.day p {
+    font-size: 12px;
+}
+
+.day .icon {
+    font-size: 25px;
+}
+
+.day strong {
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    color: #8194ae;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+@media (max-width: 750px) {
+    .header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+}
